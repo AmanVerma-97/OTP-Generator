@@ -39,7 +39,12 @@ function generateOTP(length) {
 
 validateOtpButton.addEventListener("click", function() {
     const enteredOtp = otpInput.value;
-    
+    if(!otp){
+        otpMessage.innerText = "Please generate an OTP first.";
+        otpMessage.style.color = "gray";
+        showOtp.innerText = '';
+        return; // Exit if no OTP has been generated
+    }
     if (enteredOtp === otp) {
         // alert("OTP is valid!");
         otpMessage.innerText = "OTP validated successfully!";
