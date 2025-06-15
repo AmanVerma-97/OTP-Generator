@@ -2,8 +2,13 @@
 
 const digit4 = document.getElementById("digit4");
 const digit6 = document.getElementById("digit6");
-
 const showOtp = document.getElementById("show-otp");
+
+//OTP Validation Script
+const otpInput = document.getElementById("otp-input");
+const validateOtpButton = document.getElementById("otp-confirm-btn");
+const otpMessage = document.getElementById("otp-message");
+
 
 digit4.addEventListener("click", function() {
     const otp4 = generateOTP(4);
@@ -26,25 +31,21 @@ function generateOTP(length) {
         otp += characters[randomIndex];
     }
     
-    alert(`Your OTP is: ${otp}`);
+    // alert(`Your OTP is: ${otp}`);
+    otpInput.focus(); // Focus on the OTP input field
     return otp;
 }
 
-
-//OTP Validation Script
-const otpInput = document.getElementById("otp-input");
-const validateOtpButton = document.getElementById("otp-confirm-btn");
-const otpMessage = document.getElementById("otp-message");
 
 validateOtpButton.addEventListener("click", function() {
     const enteredOtp = otpInput.value;
     
     if (enteredOtp === otp) {
-        alert("OTP is valid!");
+        // alert("OTP is valid!");
         otpMessage.innerText = "OTP validated successfully!";
         otpMessage.style.color = "green";
     } else {
-        alert("Invalid OTP. Please try again.");
+        // alert("Invalid OTP. Please try again.");
         otpMessage.innerText = "Invalid OTP. Please try again.";
         otpMessage.style.color = "red";
     }

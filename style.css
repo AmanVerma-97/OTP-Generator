@@ -7,9 +7,25 @@ body{
     overflow: hidden;
 }
 /* OTP Confirmation Area*/
+@media (max-width: 800px) {
+    .otp-confirm{
+        width: 80%;
+    }
+}
+
+@media (min-width: 800px) {
+    .otp-confirm{
+        width: 65%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .otp-confirm{
+        width: 45%;
+    }
+}
 .otp-confirm{
     background-color: black;
-    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -29,12 +45,31 @@ body{
     width: 50%;
     margin-bottom: 5px;
     padding: 2px;
+    text-align: center;
+    border-radius: 10px;
 }
 
 
 /*OTP generation Area*/
+@media (max-width: 800px) {
+    .otp-generate{
+        width: 80%;
+    }
+}
+
+@media (min-width: 800px) {
+    .otp-generate{
+        width: 65%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .otp-generate{
+        width: 45%;
+    }
+}
+
 .otp-generate{
-    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -46,6 +81,8 @@ body{
     color: white;
     border-radius: 5px;
 }
+
+
 
 .buttons{
     display: flex;
