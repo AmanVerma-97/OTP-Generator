@@ -1,0 +1,75 @@
+body{
+    text-align: center;
+    background-color: rgb(94, 94, 187);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin: 0;  
+    overflow: hidden;
+}
+/* OTP Confirmation Area*/
+.otp-confirm{
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+    border: 2px solid black;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.otp-confirm p{
+    color: white;
+}
+
+[type="text"]{
+    width: 50%;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+
+/*OTP generation Area*/
+.otp-generate{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    border: 2px solid rgb(94, 72, 72);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h3{
+    color: white;
+}
+
+button{
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: rgb(4, 75, 99);
+    color: whitesmoke;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    border: 2px solid rgb(17, 60, 75);
+    background-color: rgb(50, 131, 131);
+}
